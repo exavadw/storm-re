@@ -1,0 +1,48 @@
+{
+  "default_builds": ["s4", "s4-debug", "s4-107"],
+  "topics": {
+    "input": {
+      "targets": [
+        "ccPlayer::ChangeAction",
+        "ccPlayerLeader::UpdatePadState",
+        "0x7E0214"
+      ]
+    },
+    "combat": {
+      "targets": [
+        "ccPlayer::OnDamageGuardHit",
+        "0x7824B8"
+      ]
+    },
+    "net": {
+      "targets": [
+        "ccNetFreeBattleSync::CtrlFighting",
+        "ccNetFreeBattleSync::AddNetDataToInputBuffer",
+        "ccNetFreeBattleSync::AnalysisFrameDataFromFighter",
+        "ccNetInputBuffer::Add",
+        "ccNetConvertRTT"
+      ]
+    },
+    "story": {
+      "targets": [
+        "0xABD020",
+        "Movie::Invoke"
+      ]
+    },
+    "frame": {
+      "builds": ["s4"],
+      "targets": [
+        "0xA0C290",
+        "ccPlayer::ChangeAction"
+      ]
+    },
+    "replay": {
+      "builds": ["s4"],
+      "targets": ["0x5B8088"]
+    },
+    "render": {
+      "builds": ["s4"],
+      "targets": ["0x19F400", "0xA40150", "0xA40060"]
+    }
+  }
+}

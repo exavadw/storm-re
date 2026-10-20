@@ -1,0 +1,23 @@
+# storm-re config. Copy to ~/.config/storm-re/config.toml (or set STORM_RE_CONFIG).
+# Precedence: CLI flag > environment variable > this file > built-in default.
+# Every key is optional.
+
+mcp_url = "http://127.0.0.1:8770/mcp"          # pyghidra-mcp endpoint
+# db = "~/.local/share/storm-re/storm-re.db"
+# host = "local"                                # label stored with indexed programs
+
+# Optional data sources (all produced from your own game copies)
+# nucc_root = "~/nucc-symbols"                  # games/<game>/<sha256>/functions.csv
+# manual_root = "~/ghidra/storm-research"       # *.manual.csv
+# trilogy_tsv = "~/ghidra/trilogy-dynsym.tsv"   # Switch dynsym dump
+# bsim_root = "~/ghidra/match/out"              # *.bsim.tsv
+# hot_json = "/path/to/hot.json"
+# assets_root = "~/storm-cpk-extracted"         # <root>/<game>/<cpk dir>/<cpk name>/<entry>
+# assets_win_root = 'D:\storm-cpk-extracted'    # reported as win_path; unset = off
+
+# Ghidra program names carry a per-project hash suffix. Point each alias you use
+# at your own import (see `bin/storm-re builds`). Unlisted aliases keep defaults.
+# [builds.s4]
+# program = "/NSUNS4_release.exe-xxxxxx"
+# [builds.s3]
+# program = "/NSUNS3.exe-xxxxxx"

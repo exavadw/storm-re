@@ -1,0 +1,4 @@
+#!/bin/sh
+# storm-re launcher (no install required)
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+PYTHONPATH="$ROOT/src${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m storm_re "$@"

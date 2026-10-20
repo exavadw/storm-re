@@ -1,0 +1,4 @@
+#!/bin/sh
+# storm-re MCP server launcher (stdio)
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+PYTHONPATH="$ROOT/src${PYTHONPATH:+:$PYTHONPATH}" exec python3 -m storm_re.mcp_server "$@"

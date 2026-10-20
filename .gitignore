@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+*.db
+.DS_Store
+*.db-*
+*.sqlite
+config.toml
+# never commit game data
+*.exe
+*.dll
+*.cpk
+*.xfbin
+*.usm
+*.acb
+*.awb
+*.gfx
+*.nsp
+*.nso
+*.xex
+*.elf
